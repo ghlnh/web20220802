@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 인접한 형제 셀렉터 */
+        h1 + p {
+            color: blue;
+
+        }
+
+        .error + p {
+            border:5px solid;
+        }
+        .note + p {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1.error+p>lorem^h1.note+p>lorem -->
+    <!-- +는 h1과 p가 같은 level이며 바로 그 다음 형제 -->
+    <h1 class="error"></h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id architecto quam voluptatem commodi reprehenderit optio velit. Tempora vero natus unde repellendus dolore corrupti odit quae. Adipisci consequuntur ratione totam dolor.
+    </p>
+    <h1 class="note"></h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus molestias voluptate delectus, voluptas harum itaque laborum natus id dolorum laudantium nemo provident qui beatae incidunt quasi deserunt fuga voluptatum asperiores!
+    </p>
+</body>
+</html>

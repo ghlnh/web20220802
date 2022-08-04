@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            text-decoration: underline;
+        }
+
+        /* 자식 선택자 child selector > */
+        /* 부모 > 자식 지정 */
+        .error > p {
+            background-color: yellow;
+        }
+
+        div> p {
+            border: 3px solid;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- .note>.error>p>lorem -->
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat qui aspernatur molestias dolor quod impedit, molestiae commodi veniam, repellendus iste? Libero ab dolor amet natus obcaecati! Eveniet, sed ipsam.
+            </p>
+        </div>
+    </div>
+
+    <!-- .error>.note>p>lorem -->
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet non deserunt enim alias temporibus repellat vitae doloremque animi, labore quas iusto delectus voluptate harum similique totam nostrum velit deleniti atque.
+            </p>
+        </div>
+    </div>
+    <!-- p의 부모 클래스는 note. error는 부모가 아닌 조상 -->
+
+
+
+</body>
+</html>
