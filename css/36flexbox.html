@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* 내가 한 풀이 */
+        div {
+            background-color: rgb(58, 57, 57);
+            color: white;
+            font-size: 48px;
+            font-weight: bold;  
+            text-align: center;
+            padding: 10px 25px 5px 25px;
+            
+
+        }
+        .flexbox {
+            display: flex;
+        }
+        .flexbox >div:hover {
+            background-color: rgb(0, 0, 0);
+        }
+        .flexbox > div:active {
+            background-color: green;
+        }
+/* 선생님 정답 */
+        .container {
+            display: flex;
+        }
+        .container > div {
+            background-color: #222;
+            color: #eee;
+            font-size: 48px;
+            font-weight: bold;
+            padding: 15px 20px;
+        }
+        .container > div:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <!-- 내가 한 풀이 -->
+    <div class="flexbox">
+        <div><i class="fa-solid fa-house"></i></div>
+        <div title="HTML">HTML</div>
+        <div title="CSS">CSS</div>
+        <div title="JAVASCRIPT">JAVASCRIPT</div>
+        <div title="SQL">SQL</div>
+        <div title="PYTHON">PYTHON</div>
+        <div title="PHP">PHP</div>
+        <div title="BOOTSTRAP">BOOTSTRAP</div>
+        <div title="HOW TO">HOW TO</div>
+    </div>
+
+
+
+    <hr>    
+    <hr>
+    <!-- 선생님 정답 -->
+    <div class="container">
+        <!-- div*8 -->
+        
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JAVASCRIPT</div>
+        <div>SQL</div>
+        <div>PYTHON</div>
+        <div>PHP</div>
+        <div>BOOTSTRAP</div>
+        <div>HOW TO</div>
+    </div>
+    
+
+</body>
+</html>
