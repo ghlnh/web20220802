@@ -15,15 +15,19 @@
             align-items: baseline;
             text-align: center;
         }
-        .top-menu>.col {
+        .top-menu>div {
             font-size: 22px;
             font-weight: bold;
             padding: 50px 25px;
         }
-        .top-menu>.col:hover {
+        .top-menu>div:hover {
             background-color: green;
         }
-/* 왜 ml.auto가 적용이 안되는지...? */
+/* 왜 ml-auto가 적용이 안되는지...? */
+/* .col이 flex: 1 이 적용되서 나머지 공간이 존재하지 않아서 ml-auto가 적용이 안됨
+우선순위에서 밀려난게 아니라 나머지 공간이 없어서 그런 것 
+.col에 걸린flex:1은 외부 css에서 적용된거라 바꾸고 싶으면 따로 style에 명시하거나
+.col를 빼기*/
         .ml-auto {
             margin-left: auto;
         }
@@ -33,14 +37,14 @@
             
         }
 
-        .menu>.col {
-            font-size: 15px;
+        .menu>div {
+            font-size: 22px;
             font-weight: bold;
             color: white;
-            padding: 15px 5px;
+            padding: 15px 25px;
         }
 
-        .menu>.col:hover {
+        .menu>div:hover {
             background-color: rgb(93, 90, 90);
         }
 
@@ -64,28 +68,28 @@
 <body>
     <!-- top menu -->
     <div class="rw top-menu">
-        <div class="col">lorem1<i class="fa-solid fa-caret-down"></i></div>
-        <div class="col">lorem1<i class="fa-solid fa-caret-down"></i></div>
-        <div class="col">lorem1<i class="fa-solid fa-caret-down"></i></div>
-        <div class="col">lorem1<i class="fa-solid fa-caret-down"></i></div>
-        <div class="col ml-auto">Pro</div>
-        <div class="col">lorem1</div>
-        <div class="col">lorem1</div>
-        <div class="col">lorem1</div>
+        <div>lorem1<i class="fa-solid fa-caret-down"></i></div>
+        <div>lorem1<i class="fa-solid fa-caret-down"></i></div>
+        <div>lorem1<i class="fa-solid fa-caret-down"></i></div>
+        <div>lorem1<i class="fa-solid fa-caret-down"></i></div>
+        <div class="ml-auto">Pro</div>
+        <div>lorem1</div>
+        <div>lorem1</div>
+        <div>lorem1</div>
     </div>
 <!-- menu -->
     <div class="rw menu">
-        <div class="col">lorem1</div>
-        <div class="col">lorem1</div>
-        <div class="col">lorem1</div>
-        <div class="col">lorem1</div>
-        <div class="col">lorem1</div>
-        <div class="col">lorem1</div>
-        <div class="col">lorem1</div>
-        <div class="col">lorem1</div>
-        <div class="col ml-auto"><i class="fa-solid fa-circle-half-stroke"></i></div>
-        <div class="col"><i class="fa-solid fa-earth-americas"></i></div>
-        <div class="col"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div>lorem1</div>
+        <div>lorem1</div>
+        <div>lorem1</div>
+        <div>lorem1</div>
+        <div>lorem1</div>
+        <div>lorem1</div>
+        <div>lorem1</div>
+        <div>lorem1</div>
+        <div class="ml-auto"><i class="fa-solid fa-circle-half-stroke"></i></div>
+        <div><i class="fa-solid fa-earth-americas"></i></div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
         </div>
     </div>
 
