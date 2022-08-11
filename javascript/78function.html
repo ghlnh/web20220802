@@ -7,11 +7,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-    <h1>포털 사이트 Daum으로 연결하기</h1>
-    <a href="https://www.daum.net"><img src="umbrella.jpg" alt=""></a>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    
+    function printDouble(f) {
+        // console.log(f+f); 로 하면 결과가 함수 정의가 2번 연달아 나오는걸로 나옴
+        console.log(f()+f());
+    }
+    // 함수가 값이 될 수 있어서 함수 안에 함수를 집어 넣을 수 있음
+    printDouble(function() {
+        return "hello";
+    })
+
+    printDouble(function() {
+        return "java";
+    });
+
     </script>
 </body>
 </html>
