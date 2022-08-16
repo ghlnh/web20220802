@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <!-- div*3>{CLICK}+(h1>lorem1^p>lorem)*2 -->
+    <div>
+        <!-- CLICK은 div의 자손이 아닌 그냥 컨텐트 -->
+        CLICK
+        <h1>
+            Lorem.
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate illo similique consequuntur, ab dignissimos, obcaecati itaque libero quaerat saepe quod omnis! Illum quo pariatur officia cum adipisci ipsa laborum!
+        </p>
+        <h1>
+            Ea.
+        </h1>
+        <p>
+            Magnam aut odio at, accusantium consequatur ab maxime, dignissimos nam, molestias veniam laudantium excepturi est suscipit dolores nemo nisi incidunt? Placeat, ullam vel! Molestiae, laudantium. Nisi rem molestias ipsa in.
+        </p>
+    </div>
+    <div>
+        CLICK
+        <h1>
+            Lorem.
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquid atque sint voluptas similique amet, est, odit, minima maiores sequi omnis porro at blanditiis sit quibusdam repellendus aut quisquam excepturi.
+        </p>
+        <h1>
+            Rem!
+        </h1>
+        <p>
+            Tempora veniam sapiente expedita delectus corrupti ipsam aliquid ipsa officiis perspiciatis dicta, aperiam nobis eveniet enim necessitatibus voluptatibus numquam laudantium, iusto quis animi! Rerum quam non et blanditiis eius eligendi!
+        </p>
+    </div>
+    <div>
+        CLICK
+        <h1>
+            Lorem.
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae totam eum magnam atque. Neque debitis ex iure veniam, laudantium iste odit. Reprehenderit itaque fuga id voluptatem ad reiciendis mollitia.
+        </p>
+        <h1>
+            Ipsa!
+        </h1>
+        <p>
+            Earum placeat quos, ad perferendis odit eligendi incidunt quia esse inventore hic, sint reprehenderit necessitatibus maxime, quisquam sed tempore! Repellendus, dolor! Numquam totam necessitatibus nihil quibusdam sit minima iure fugiat.
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+    // CLICK 글자 클릭하면 안에 있는 p요소 2개의 .d-none 클래스가 toggle되도록 작성
+    let div = document.querySelectorAll("div");
+    
+    for(let i = 0; i <div.length; i++) {
+        div[i].addEventListener("click", function() {   //각 CLICK에 대한 클릭이벤트 설정
+            let pelems = this.querySelectorAll("p");    //각 CLICK의 자식 p 요소들 
+            for (let j =0; j<pelems.length; j++) {     
+            pelems[j].classList.toggle("d-none");       //p요소들에 대한 toggle 설정
+            }
+        })
+    }
+    </script>
+</body>
+</html>
